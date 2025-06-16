@@ -164,7 +164,7 @@ setup_bedrock_valet() {
 install_wordpress_theme() {
   local npm_cmd="dev"
   local composer_flags=(--no-ansi --no-interaction --no-progress)
-  SAGE_BUD_CONFIG="$DEMYX"/web/app/themes/"$SAGE_THEME"/bud.config.mjs
+  # SAGE_VITE_CONFIG="WP_THEME_PATH/vite.config.js
 
   if [[ "$WP_ENV" == "production" ]]; then
     composer_flags+=(--no-dev --optimize-autoloader --no-scripts)
