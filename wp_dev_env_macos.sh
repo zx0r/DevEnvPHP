@@ -189,7 +189,7 @@ install_wordpress_theme() {
   success "Theme: $WP_THEME_NAME successfully installed and activated"
 }
 
-setup_xclean_structure() {
+setup_site_structure() {
   echo "Создаю структуру сайта $PROJECT_NAME"
 
   # Страницы: slug -> "Заголовок|Содержимое"
